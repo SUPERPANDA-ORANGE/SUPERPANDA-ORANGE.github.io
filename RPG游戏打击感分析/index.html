@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="熊猫超人的个人主页">
+  <meta name="description" content="网站简介">
+  
+  <title>PandaOrange</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/source/panda.ico">
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu" ><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav" >
+    <div class="nav-header"  style="background-image: url(/images/header_bg.png);background-color:#26A69A">
+    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
+    <p>Potter Zhang</p>
+    <div class="nav-link">
+        
+        <a href="http://example.com" target="_blank"> <div class="link-box twitter"></div></a>
+        
+        
+        <a  href="https://github.com/SUPERPANDA-ORANGE" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        <a href="mailto:Wuyang.Zhang@pandaorange.me"><div class="link-box email"></div></a>
+        
+        
+        <a href="https://weibo.com/3721434680/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+        <a href="https://www.zhihu.com/people/zhang-wu-yang-63/activities" target="_blank"> <div class="link-box zhihu"></div></a>
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off"/>
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a  class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2017/12/">December 2017<span class="archive-count">4</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/游戏策划/">游戏策划<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/简介/">简介<span class="category-count">3</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/DMC.jpg)" >
+  <h2>ARPG游戏打击感分析</h2>
+    
+  <p>作者:Potter Zhang &nbsp&nbsp 发布于:<time datetime="2017-12-19T19:07:36.000Z">
+          2017-12-20
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <p>RPG游戏打击感分析<br><strong>(打击感的设计也是系统设计)</strong></p>
+<p>在知乎上看到@胡摆平大神讲过一个关于游戏打击感的对比. 这里把他的方法论拿过来先学习一下</p>
+<blockquote>
+<p>打击感的主干是打击节奏.<br> 节奏是线,下找点, 上铺面<br> 点,指的是表现点, 面,指的是玩家综合的战斗感受,通过不同的体验表现偏重, 决定了游<br> 戏的打击感.</p>
+</blockquote>
+<p>首先是对于忍者龙剑传 , 战神, 鬼泣的打击感分析.</p>
+<h1 id="表现点"><a href="#表现点" class="headerlink" title="表现点"></a>表现点</h1><p>主要从<strong>怪物反馈, 主角体验和武器反馈</strong>三个角度来考虑.</p>
+<h2 id="怪物反馈"><a href="#怪物反馈" class="headerlink" title="怪物反馈"></a>怪物反馈</h2><p>忍龙中怪物的关键反馈是破防, 而不像三国无双, 在怪物被玩家一套连招打到时, 怪物不会硬直, 并且即使把怪物破防, 在中了玩家两刀后, 第三刀就躲开了 , 所以这样的战斗, 核心点在于拆招.<br>而战神就没有什么拆招的概念,而是力破 , 战神里的怪物在反馈上更像是被冲击破震到崩坏. 体现力量感的一大手段就是放慢 , 让你看清是怎么样拳拳到肉的 , 所以战神的战斗节奏相比较其他两款游戏就是相对较慢的.与此同时, 双刀加上链子也起到了减速的作用.<br>而鬼泣就不存在砍肉的感觉, 相反, 鬼泣打怪物就是在砍沙袋.</p>
+<h2 id="主角体验"><a href="#主角体验" class="headerlink" title="主角体验:"></a><strong>主角体验</strong>:</h2><p>忍龙里的战斗给玩家的感觉就完全是干净利落毫无拖沓, 感觉战斗极其流畅,带给玩家以连击为主的线式快感<br>而在战神里, 为了表现更多的力量感和反馈更精致的细节, 奎爷用的都是重兵器,拳拳到肉,力量感爆棚<br>鬼泣里但丁用大剑,但是感觉举重若轻, 奈落用鬼爪和大剑绯红皇后. 鬼爪的存在使得战斗极具灵活性与观赏性 , 而大剑与手枪的配合, 又在保证稳定的同时提升了流畅感.</p>
+<p>那么总结一下,  表现点的重点工作是:<strong>拆分</strong>, 将打击的过程尽量拆解成细碎的点, 并以施受力个体为单位进行分类, 分级, 来决定你想要表现的部分.</p>
+<h1 id="感受线"><a href="#感受线" class="headerlink" title="感受线:"></a><strong>感受线</strong>:</h1><p>还是从三个角度来看, <strong>打击节奏, 镜头, 系统</strong>.</p>
+<h2 id="打击节奏"><a href="#打击节奏" class="headerlink" title="打击节奏"></a>打击节奏</h2><p>忍龙的打击节奏是连击. 断骨, 寻找下个目标, 再连击,这样的一个循环, 并且由于怪物很强, 所以留给玩家去思考的时间很少, 紧张感贯穿始终<br>而战神的节奏模型核心就是我们之前所说的突出力量感,拳拳到肉. 在战神里, 一定是在一拳到肉, 让你感受到你所有的力量释放与反馈之后才会出下一拳. 表现力极强, 所以虽然战神节奏略慢, 但是玩家并不会因此而感觉战斗力有卡顿感, 并且玩家的兴奋感会更高. 此外战神还穿插了QTE操作, 虐杀与血腥的快感爆棚.<br>而鬼泣的节奏模型的核心就是表演了,用各种各样的武器,打出各种各样华丽的连招, 中间穿插武器切换和挑衅调节气氛, 来把一群怪物虐到体无完肤.</p>
+<h2 id="镜头"><a href="#镜头" class="headerlink" title="镜头:"></a><strong>镜头</strong>:</h2><p>忍龙里的断骨, 战神里的QTE都会出现镜头特写, 对于这种特写镜头的运用会强制转移玩家的注意力, 打断玩家由于连续操作而转向特定感受, 这一点对于控制连续操作所带来的紧张感很有必要—可以防止玩家疲劳, 强化兴奋点.</p>
+<h2 id="战斗系统"><a href="#战斗系统" class="headerlink" title="战斗系统:"></a><strong>战斗系统</strong>:</h2><p>这里只说和打击感相关的系统.<br>忍龙由于我们前面提到的,怪物没有硬直, 很难破防, 再被连招的时候可能会躲开, 所以忍龙是一个一直给玩家压迫感的游戏.我们假设怪物会被玩家一套连招直接连死. 那么在玩家杀死一个怪物去跑到下一个怪物面前的时候, 这个感受的链条就断掉了, 但是如果是成群结队的, 比较难以控制的挂物追着你打, 玩家在打死一个怪物后不但不会有太强的成就感, 反而是”终于又消灭了一个,变得轻松了一点”的感觉.</p>
+<p>而战神系列的核心就是力量感, 连击只是一个让你保持这种状态的一个标志, 所以他实际上特色的系统是终结技系统, 特别表现力量感, 为增加互动强化感受qte.<br>由于这种作为核心的力量感在挂物,角色的反馈和武器上的反馈是持续的, 并且奎爷可以一次打掉一群敌人, 只要打击遗址进行, 优良的手感就会持续, 这种感觉很安全, 因为很难断掉.</p>
+<p>而鬼泣的打击感, 从系统的角度来讲, 就是用花哨的连招,完成三国无双式的战斗.就是要玩的花, 玩的好看.你不是在砍怪, 你是在表演.</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>综上所述, 整理一下打击感问题的关键点:</p>
+<blockquote>
+<ol>
+<li>打击感需要拆分成很多不同阶段的点, 然后根据游戏的需要将一些点去着重表现. 对于每一个动作, 每一个招式的拆分要尽可能的细致, 越细致越容易发现问题.</li>
+<li>在感受需求合理的情况下, 你要表现的内容, 需要有相应的系统来将其突出放大 , 其中所设计的所有元素与规则都要跟着配合.”体验的简历和细节解构—确立打击节奏模型—制定规则—-有相应的系统配合”</li>
+<li>单靠感受点是无法让玩家获得整体的体验的,点必须连成线, 而其中链条的主轴就是打击节奏: 她控制了感受出现的顺序和频率, 让感受归于有序.</li>
+<li>震屏, 溅血, 刀花, 音效, 尘土, 视角, 这些外围因素在不会喧宾夺主的情况下, 一样是制造优良打击感所必不可少的元素.</li>
+<li>同一个游戏里, 每一种武器的选择都有不同的打击节奏, 这是延长游戏寿命, 让游戏从本质上更为丰富的手段.”但是在做出打击节奏后要注意:1.武器配合, 2优势关卡 3数值平衡”</li>
+</ol>
+</blockquote>
+<p>我会在下一篇文章了里, 仿照上面的方法论来分析一下巫师三与黑魂三游戏战斗系统,打击感的对比.</p>
+
+  </div>
+  <!--评论块-->
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+  <a href="/巫师三系统反推/" id="post_nav-newer" class="post-nav-content prev-content">
+      新篇
+  </a>
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/youxicehua/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#表现点"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a href="#&#x8868;&#x73B0;&#x70B9;" class="headerlink" title="&#x8868;&#x73B0;&#x70B9;"></a>&#x8868;&#x73B0;&#x70B9;</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#怪物反馈"><span class="post-toc-number">1.1.</span> <span class="post-toc-text"><a href="#&#x602A;&#x7269;&#x53CD;&#x9988;" class="headerlink" title="&#x602A;&#x7269;&#x53CD;&#x9988;"></a>&#x602A;&#x7269;&#x53CD;&#x9988;</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主角体验"><span class="post-toc-number">1.2.</span> <span class="post-toc-text"><a href="#&#x4E3B;&#x89D2;&#x4F53;&#x9A8C;" class="headerlink" title="&#x4E3B;&#x89D2;&#x4F53;&#x9A8C;:"></a><strong>&#x4E3B;&#x89D2;&#x4F53;&#x9A8C;</strong>:</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#感受线"><span class="post-toc-number">2.</span> <span class="post-toc-text"><a href="#&#x611F;&#x53D7;&#x7EBF;" class="headerlink" title="&#x611F;&#x53D7;&#x7EBF;:"></a><strong>&#x611F;&#x53D7;&#x7EBF;</strong>:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#打击节奏"><span class="post-toc-number">2.1.</span> <span class="post-toc-text"><a href="#&#x6253;&#x51FB;&#x8282;&#x594F;" class="headerlink" title="&#x6253;&#x51FB;&#x8282;&#x594F;"></a>&#x6253;&#x51FB;&#x8282;&#x594F;</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#镜头"><span class="post-toc-number">2.2.</span> <span class="post-toc-text"><a href="#&#x955C;&#x5934;" class="headerlink" title="&#x955C;&#x5934;:"></a><strong>&#x955C;&#x5934;</strong>:</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#战斗系统"><span class="post-toc-number">2.3.</span> <span class="post-toc-text"><a href="#&#x6218;&#x6597;&#x7CFB;&#x7EDF;" class="headerlink" title="&#x6218;&#x6597;&#x7CFB;&#x7EDF;:"></a><strong>&#x6218;&#x6597;&#x7CFB;&#x7EDF;</strong>:</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总结"><span class="post-toc-number">3.</span> <span class="post-toc-text"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</span></a></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p style="line-height: 45px">Copyright ©  2017  PandaOrange</p>
+<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>

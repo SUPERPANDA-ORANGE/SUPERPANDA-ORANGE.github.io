@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="熊猫超人的个人主页">
+  <meta name="description" content="网站简介">
+  
+  <title>PandaOrange</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/source/panda.ico">
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu" ><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav" >
+    <div class="nav-header"  style="background-image: url(/images/header_bg.png);background-color:#26A69A">
+    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
+    <p>Potter Zhang</p>
+    <div class="nav-link">
+        
+        <a href="http://example.com" target="_blank"> <div class="link-box twitter"></div></a>
+        
+        
+        <a  href="https://github.com/SUPERPANDA-ORANGE" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        <a href="mailto:Wuyang.Zhang@pandaorange.me"><div class="link-box email"></div></a>
+        
+        
+        <a href="https://weibo.com/3721434680/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+        <a href="https://www.zhihu.com/people/zhang-wu-yang-63/activities" target="_blank"> <div class="link-box zhihu"></div></a>
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off"/>
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a  class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2017/12/">December 2017<span class="archive-count">5</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/游戏策划/">游戏策划<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/简介/">简介<span class="category-count">4</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/dota.jpg)" >
+  <h2>刀塔传奇战斗系统分析</h2>
+    
+  <p>作者:Potter Zhang &nbsp&nbsp 发布于:<time datetime="2017-12-29T12:35:44.000Z">
+          2017-12-29
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h1 id="刀塔传奇简介"><a href="#刀塔传奇简介" class="headerlink" title="刀塔传奇简介:"></a>刀塔传奇简介:</h1><p>故事发生在世界之树、冰封王座两个对立的遗迹中。其中，世界之树散发着光辉和温暖，而冰封王座象征着冰冷和黑暗。这两个遗迹吸引了完全不同类型的种族，为了守护自身遗迹文明的发展和繁荣。越来越多的英雄，加入到双方阵营，进行相互的对决。<br>　　玩家看可扮演龙骑士、暗夜魔王、黑暗骑士、魔像、神灵武士、小精灵、巨剑骑士等英雄，加入到世界之树或冰封王座任意一个阵营，去守护自身的遗迹文明(来自百度百科)<br>  玩这款游戏, 和我是一名dota老玩家有很大的关系(在这里不讨论版权问题, 只是站在一名游戏策划的角度去看这款游戏,  主要看游戏里策划的优缺点) ,在刀塔传奇里我能用到我在刀塔里熟知的英雄 , 一开始这款游戏吸引我入坑, 大概有很大的情怀的关系吧.<br>  言归正传, 接下来我将会从战斗系统, 装备系统的角度来反推一下刀塔传奇的系统策划, 并试着分析他们这样策划的原因.</p>
+<h2 id="从战斗系统开始"><a href="#从战斗系统开始" class="headerlink" title="从战斗系统开始."></a>从战斗系统开始.</h2><p>刀塔传奇的战斗主要分为pve和pvp两种形式.<br>PVE:<br>刀塔传奇里采用副本与任务结合的模式, 在玩家刷更高难度副本的同时了解基本剧情.<br>战斗场景的基本样式如下图所示<br><img src="http://www.pandaorange.me/pic/dotaCQ_battle.png" alt=""><br>屏幕上方一小条是功能按钮以及图标. 有暂停, 倒计时, 副本进程, 获得金钱, 掉落宝箱.<br>其中和战斗相关的功能是倒计时与副本进程.<br><strong>倒计时</strong>:<br>1、开始战斗后开始倒计时<br>2、当倒计时结束后，战斗仍然没有结果则直接判断攻防失败<br>3、倒计时每通过一个回合重置<br><strong>副本进程</strong>：<br>1、一次完整的战斗由回合组成<br>2、分母表示总回合，分子表示当前回合，没有进程表示此战斗只有1回合</p>
+<p>屏幕下方的内容是英雄头像与血量和能量<br><strong>头像</strong>：<br>1、头像框里面是所代表角色的头像<br>2、头像框代表的是该角色的品质颜色<br>3、头像的星星代表的是该角色的星级<br>4、头像下面是血量条与能量条<br><strong>血量</strong>：<br>1、绿色色条表示血量<br>2、当血量为0时，角色死亡<br>3、进入一场新的战斗时，血量默认100%<br>4、进入下一回合时，血量保持上一回合结束状态<br><strong>能量</strong>：<br>1、黄色色条表示能量<br>2、进入一场新的战斗时，能量默认为0<br>3、进入下一回合时，能量保持上一回合结束状态<br>4、当能量充满时，不再增加能量值<br>5、当能量充满时，会激活头像，点击头像可以释放技能<br>6、释放技能后，能量值归0<br>用下面的图来展示战斗中的血量与能量的变化:</p>
+<p><strong>总结</strong>:</p>
+<ol>
+<li>血量与能量和战斗中的许多元素有密不可分的联系, 其中血量与能量之间又是相互掣肘 , 相互影响的, 这样的设计极大程度的增加了战斗的多样化与随机性. 同时也增加了玩家对于战斗的兴趣, 减少了刷副本时的乏味感</li>
+<li>血量和能量的变化机制很复杂, 但是展示给玩家的内容却非常简单, 只需要看血量跟能量的浮动，当技能激活时选择合适的时机释放技能，学习成本极低 , 有利于玩家简单上手，快速进入到战斗体验。</li>
+</ol>
+<h2 id="战斗表现"><a href="#战斗表现" class="headerlink" title="战斗表现:"></a>战斗表现:</h2><p><strong>人物</strong>:</p>
+<ol>
+<li>角色在地图下方用和dota一样的头像下面是血条能量条的方式呈现, 让玩家不会有陌生感, 并且dota2已经证明, 这种表示方式确实比用数值直接告诉玩家会更加有效率 , 并且更加的直观. 大部分玩家不是数据党, 对于数据并不会太敏感, 这时候就体现出了直观可视化的好处.</li>
+<li>将dota的英雄q化 . 不同的风格与搭配有不同的受众面，刀塔传奇在此方面体现出了略休闲的味道，加大了对女性玩家的吸引，现阶段女性玩家在玩家比例中分量逐渐增加，并且女性玩家会吸引来更多男性玩家。</li>
+<li>每个英雄的主动技能在释放的时候都能在很大的程度上改变战局的走向, 所以可操作性非常强, 并且在玩家在适当的时机 , 进行一波精彩操作之后, 基本上是能够在战局中明显看到这一次操作对战局造成的影响的, 所以能够给玩家很强, 很棒的正反馈.</li>
+<li>每个角色都有各自的打击、受击、死亡、胜利动作: 刀塔传奇核心在战斗，战斗的核心在战斗体验，在战斗细节方面下足功夫，让战斗体验提升一个档次。动作是对游戏过程的反馈，多动作增加游戏的真实感和玩家的沉浸感</li>
+<li>每一个角色在主动技能之外还有3个被动技能, 随等级与品质升高, 逐个解锁, 被动技能都是按照概率或者一定的出发条件触发 , 所以在玩家对战的过程中添加了大量的不确定的因素, 而且这些因素 , 虽然并没有主动技能对于战局的改变大 , 但是积少成多, 也确确实实是在 , 以一种肉眼可见的方式改变战局</li>
+<li>阵容:游戏里对于英雄按照dota传统的力量, 敏捷, 智力三种方式划分.<br>力量英雄通常是高血量, 高防御力的近战英雄 ,在战局里站在前排<br>敏捷英雄通常是中等血量, 中等防御力的远程英雄, 通常使用普通攻击来造成伤害, 是团队中的adc.<br>智利英雄是低血量, 低防御力的远程英雄, 通常使用法术攻击造成伤害, 是团队中的ap.<br>每种位置的角色会有自己的排序, 玩家在开场的时候就可以进行自己的排兵布阵, 在战斗的部分之外, 还给玩家策略上的游戏体验.</li>
+</ol>
+<p>每种角色的站位如图所示:</p>
+<p><strong>总结</strong>:</p>
+<ol>
+<li>这种设计, 首先在大体上会去控制角色的排序方式, 对于没有玩过dota 的新手或者对于游戏的基本玩法没有认识的新手有一个引导, 同时也防止出现新玩家由于阵形的问题而输掉比赛的情况, 进一步的降低了游戏的门槛</li>
+<li>给玩家留下可控制可操作可思考的空间, 让玩家去主动思考, 用什么样的角色参加战斗更容易获得胜利, 而且也和dota 相同, 有一定阵容上的克制关系. 让玩家必须在对游戏思考之后才能赢得胜利, 增强玩家获得胜利的成就感和乐趣.</li>
+</ol>
+<p><strong>角色属性</strong>:<br>刀塔传奇里角色的属性和传统moba以及dota里的属性以及相互的影响是一样的,而影响角色属性的元素我粗线性的分为 基础属性(比如力量, 智力) 二级属性(护甲, 魔法抗性) 独立属性(只受到装备与技能的影响)<br>属性影响如下表所示:</p>
+<p><strong>总结</strong>:</p>
+<ol>
+<li>属性这个内容的受众,我将它们分为两个部分,一部分是核心玩家, 一部分是娱乐玩家. 对于核心玩家来说,他们会仔细的钻研每一种属性, 尽可能的让自己的角色用性价比较高的装备, 被合理的强化. 另一种是娱乐休闲玩家, 这一类玩家占到绝大多数, 他们通常会觉得信息量太大而产生焦躁 . 不愿意去多看 , 所以游戏应该给出一条建议的属性增加思路.</li>
+<li>属性的设置和市面上比较火 , 受众众多的moba游戏相同, 可以大大降低学习成本, 同时不会让老玩家产生陌生感.</li>
+<li>多种属性可以让游戏呈现结果多样化，增加游戏随机的乐趣</li>
+<li>复杂多样的属性可以促使熟悉游戏的玩家觉得值得讨论并且深入讨论，增加游戏扩展型线上、线下的影响</li>
+</ol>
+<p><strong>人物技能</strong>:<br>技能分类: 主动技能与被动技能.<br><strong>手动释放技能</strong></p>
+<p>手动释放技能就是当能量充满时，角色头像高亮，点击头像后可释放的技能<br>1、 每个角色只有一个手动释放技能<br>2、 手动点击释放（除自动战斗、扫荡外）<br>3、 消耗能量<br>4、 属于最优先技能<br>5、全屏变暗，有特殊特效表现<br> <img src="http://www.pandaorange.me/pic/dotaCQ_final.png" alt=""><br>技能激活流程如图所示:</p>
+<p><strong>被动技能</strong>:<br>被动技能是在战斗中根据概率或者达到某些触发条件而被动触发的. 技能触发并不会消耗能量, 但是技能有内置的cd , 用一个伪随机算法触发, 并不会导致玩家因为运气而对对局产生太大的影响.<br>与此同时, 伪随机算法会保证被动技能一定会被触发, 导致非酋玩家心态崩溃而退坑.这款游戏还有一个点运用到伪随机算法, 就是之后的抽卡, 采用伪随机就是不想让玩家太过于容易的估算出一件事情的成本, 但是又不想玩玩家在付出太多之后什么都得不到, 所以才会有十连抽保底这样的设计.</p>
+<p>总结一下技能相关的问题:</p>
+<ol>
+<li>需要手动点击的技能只有一个, 符合微操作的概念, 既满足了玩家在游戏里有所操作的愿望, 又把学习成本与操作的繁复程度控制在一个完全可控制的范围内, </li>
+<li>有四种技能需要进行升级, 意味着玩家必须在有限的金币内去做出抉择, 这就意味着游戏的多样性与丰富的变化. 促进玩家思考技能的搭配, 促成讨论, 交流</li>
+<li>4种自动释放的技能各自的冷却CD、属性互不干扰，让玩家容易掌握规律，增加玩家深入了解技能设置的兴趣，继而增加游戏的粘着性（毫不杂乱）</li>
+<li>两种技能表现的效果差别较大, 手动释放技能表现明显高端、霸气，并且每个英雄释放技能的时候都有专属的动画, 增加了玩家对手动点击反馈的乐趣.并且除了普通攻击没有特效外，几乎所有的技能都有不同的动作与特效，增加了良好的战斗体验</li>
+</ol>
+<p>这是我第一次做系统分析, 是根据TinoTino专栏里对于刀塔传奇的系统分析的结构, 加上了一些我的思考, 如果里面有的地方做的有问题, 还请大家指正.</p>
+
+  </div>
+  <!--评论块-->
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/巫师三系统反推/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#刀塔传奇简介"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a href="#&#x5200;&#x5854;&#x4F20;&#x5947;&#x7B80;&#x4ECB;" class="headerlink" title="&#x5200;&#x5854;&#x4F20;&#x5947;&#x7B80;&#x4ECB;:"></a>&#x5200;&#x5854;&#x4F20;&#x5947;&#x7B80;&#x4ECB;:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#从战斗系统开始"><span class="post-toc-number">1.1.</span> <span class="post-toc-text"><a href="#&#x4ECE;&#x6218;&#x6597;&#x7CFB;&#x7EDF;&#x5F00;&#x59CB;" class="headerlink" title="&#x4ECE;&#x6218;&#x6597;&#x7CFB;&#x7EDF;&#x5F00;&#x59CB;."></a>&#x4ECE;&#x6218;&#x6597;&#x7CFB;&#x7EDF;&#x5F00;&#x59CB;.</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#战斗表现"><span class="post-toc-number">1.2.</span> <span class="post-toc-text"><a href="#&#x6218;&#x6597;&#x8868;&#x73B0;" class="headerlink" title="&#x6218;&#x6597;&#x8868;&#x73B0;:"></a>&#x6218;&#x6597;&#x8868;&#x73B0;:</span></a></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p style="line-height: 45px">Copyright ©  2017  PandaOrange</p>
+<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>
